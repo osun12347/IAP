@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="IAP.Page2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IAP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button Content="Buy product1" Click="Buy" Margin="0,40,0,40"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="You owned coins:"/>
+            <TextBlock Name="tb1"/>
+        </StackPanel>
+        <TextBlock Name="tb2"/>
+        <Button Content="Show Unfulfilled Consumables" Click="ShowUnfulfilledConsumables"/>
+        <Button Content="Fulfill purchase" Click="FulfillPreviousPurchase" Margin="0,40,0,40"/>
+        <StackPanel Name="stackpanel" Margin="0,300,0,0">
+        <Border Name="StatusBorder" >
+            <TextBlock Name="StatusBlock" Visibility="Collapsed"/>
+        </Border>
+        </StackPanel>
+    </StackPanel>
+</Page>
